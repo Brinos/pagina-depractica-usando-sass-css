@@ -1,0 +1,81 @@
+//Importando el partial de variables
+@import 'variables';
+
+
+//Importando el partial de Grid System
+@import 'grid-system' ;
+
+body{
+   
+    font-family: $baseFont;
+    font-size: 1.3em;
+}
+
+
+
+.special-text{
+    color: $baseColor;
+    font-family: $altFont;
+}
+
+.navbar{
+    border: dotted 1px pink;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        width: 20%;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        &:hover{
+            color: tomato;
+        }
+    }
+    .logo{
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+[class*=btn-]{
+  border: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 7px;
+  color: #FFFFFF;
+}
+
+@each $name , $value in $colores {
+    .btn-#{$name} {
+        background-color: $value;
+    }
+}
+
+.test {
+    $colorDark: darken($baseColor,30);
+    color:darken($colorDark,30);
+    background-color:$baseColor;
+    border: solid 1px lighten($baseColor,10);
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    width: percentage(35  / 800);
+    border-color: rgba(#f2f2f2 , 0.5);
+}
+
+.test2{
+    width: (400/ 120) * 10 +px ;
+}
+
+@include generateColumns();
+
+@media (min-width:568px){
+    @include generateColumns(sm)  
+}

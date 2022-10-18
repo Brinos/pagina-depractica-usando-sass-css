@@ -1,0 +1,190 @@
+.container {
+  border: solid 1px #60ddd9;
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*=col-] {
+  border: solid 1px red;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Este es un comentario normal de CSS*/
+body {
+  font-family: "Comic Sans MS";
+  font-size: 1.3em;
+}
+
+.special-text {
+  color: #60ddd9;
+  font-family: "Helvetica";
+}
+
+.navbar {
+  border: dotted 1px pink;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display: inline-block;
+  width: 20%;
+}
+.navbar a {
+  display: block;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: tomato;
+}
+.navbar .logo {
+  width: 200px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+
+[class*=btn-] {
+  border: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  border-radius: 7px;
+  color: #FFFFFF;
+}
+
+.btn-success {
+  background-color: #0eec81;
+}
+
+.btn-danger {
+  background-color: #ec4d0e;
+}
+
+.btn-info {
+  background-color: #475df3;
+}
+
+.btn-warning {
+  background-color: #e1e568;
+}
+
+.btn-otro {
+  background-color: #4c4e10;
+}
+
+.test {
+  color: #020909;
+  background-color: #60ddd9;
+  border: solid 1px #8ae6e3;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 4.375%;
+  border-color: rgba(242, 242, 242, 0.5);
+}
+
+.test2 {
+  width: 33.3333333333px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (min-width: 568px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

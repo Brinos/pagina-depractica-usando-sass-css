@@ -1,0 +1,42 @@
+.container{
+    border: solid 1px $baseColor;
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+
+    padding-left: $gap+px;
+    padding-right: $gap+px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($gap+px);
+    margin-right: -($gap+px);
+}
+
+[class*=col-]{
+    border: solid 1px red;
+    padding-left: ($gap+px);
+    padding-right: ($gap+px);
+}
+
+@mixin generateColumns($prefix:undefined) {
+    @for $i from 1 through 12 {
+        @if ($prefix != undefined) {
+                .col-#{$prefix}-#{$i}{
+                width: percentage($i/ 12);
+        }
+        }
+        @else {
+            .col-#{$i}{
+                width: percentage($i/ 12);
+        }
+        }
+     }
+}
+
+
+//Este es un comentario normal de sass
+
+/*Este es un comentario normal de CSS*/
